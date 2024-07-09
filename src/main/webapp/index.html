@@ -1,37 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>入力フォーム</title>
-<link rel="stylesheet" href="style.css"></head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Javaアプリの見た目</title>
 </head>
 <body>
-
-	<h2>入力フォーム</h2>
-
-	<form action="input-servlet" method="POST">
-		【お名前】<br>
-		<input type="text" name="name" required><br><br>
-		【パスワード】<br>
-		<input type="password" name="password" required><br><br>
-		【性別】<br>
-		<input type="radio" name="gender" value="男">男　
-		<input type="radio" name="gender" value="女">女　
-		<input type="radio" name="gender" value="その他" checked>その他　<br><br>
-		【好物】<br>
-		<input type="checkbox" name="food" value="カレー">カレー　
-		<input type="checkbox" name="food" value="ラーメン">ラーメン　
-		<input type="checkbox" name="food" value="牛丼">牛丼　<br><br>
-		【趣味】<br>
-		<select name="hobby">
-			<option value="映画">映画</option>
-			<option value="スポーツ">スポーツ</option>
-			<option value="音楽">音楽</option>
-			<option value="その他" selected>その他</option>
-		</select><br><br><br>
-	
-		<input type="submit" value="送信">
-	</form>
-
+    <header>
+        <h1>Javaアプリの見た目</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="input.html">入力フォーム</a></li>
+            <li><a href="count.jsp">カウンター</a></li>
+            <li><a href="#">サポート</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h2>メインコンテンツ</h2>
+        <p>ここにJavaアプリの主要な情報や機能を紹介します。</p>
+    </article>
+    <footer>
+        <p>Javaアプリ © 2023</p>
+    </footer>
 </body>
 </html>

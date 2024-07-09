@@ -48,7 +48,7 @@ public class OutputServlet extends HttpServlet {
 		out.println("    " + genderStr + "<br><br>                   ");
 		out.println("    " + foodStr + "<br><br>                     ");
 		out.println("    " + hobbyStr + "<br><br>                    ");
-		out.println("<br><a href=\"index.html\">入力フォームへ</a>     ");
+		out.println("<br><a href=\"input.html\">入力フォームへ</a>     ");
 		out.println("<br><br><br>------これは、OutputServletで書き出しています。------");
 		out.println("</body>                                         ");
 		out.println("</html>                                         ");
