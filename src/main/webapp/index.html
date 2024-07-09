@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Javaアプリの見た目</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<title>Javaアプリの見た目</title>
 </head>
-<body>
-    <header>
-        <h1>Javaアプリの見た目</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="input.html">入力フォーム</a></li>
-            <li><a href="count.jsp">カウンター</a></li>
-            <li><a href="#">サポート</a></li>
-            <li><a href="#">お問い合わせ</a></li>
-        </ul>
-    </nav>
-    <article>
-        <h2>メインコンテンツ</h2>
-        <p>ここにJavaアプリの主要な情報や機能を紹介します。</p>
-    </article>
-    <footer>
-        <p>Javaアプリ © 2023</p>
-    </footer>
+<body class="bg-gray-100 text-gray-900">
+<header class="bg-blue-600 text-white p-4">
+<h1 class="text-4xl font-bold">Javaアプリの見た目</h1>
+</header>
+<nav class="bg-blue-500 text-white p-4">
+<ul class="flex space-x-4">
+<li><a href="input.html" class="hover:text-gray-300">入力フォーム</a></li>
+<li><a href="count.jsp" class="hover:text-gray-300">カウンター</a></li>
+<li><a href="#" class="hover:text-gray-300">サポート</a></li>
+<li><a href="#" class="hover:text-gray-300">お問い合わせ</a></li>
+</ul>
+</nav>
+<main class="container mx-auto mt-8 p-4 bg-white shadow-md rounded">
+<article>
+<h2 class="text-2xl font-semibold mb-4">メインコンテンツ</h2>
+<p class="mb-4">ここにJavaアプリの主要な情報や機能を紹介します。</p>
+</article>
+</main>
+<footer class="bg-blue-600 text-white text-center p-4 mt-8">
+<p>Javaアプリ © 2023</p>
+</footer>
 </body>
 </html>
