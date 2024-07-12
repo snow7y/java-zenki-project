@@ -6,26 +6,82 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <title>Javaアプリの見た目</title>
 </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card Components</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .card:hover .card-description {
+    opacity: 1;
+  }
+</style>
+</head>
 <body class="bg-gray-100 text-gray-900">
-<header class="bg-blue-600 text-white p-4">
-<h1 class="text-4xl font-bold" onclick="window.location.href='index.html';">JavaApplication</h1>
-</header>
-<nav class="bg-blue-500 text-white p-4">
-<ul class="flex space-x-4">
-<li><a href="input.html" class="hover:text-gray-300">入力フォーム</a></li>
-<li><a href="count.jsp" class="hover:text-gray-300">カウンター</a></li>
-<li><a href="#" class="hover:text-gray-300">サポート</a></li>
-<li><a href="#" class="hover:text-gray-300">お問い合わせ</a></li>
-</ul>
-</nav>
-<main class="container mx-auto mt-8 p-4 bg-white shadow-md rounded">
-<article>
-<h2 class="text-2xl font-semibold mb-4">メインコンテンツ</h2>
-<p class="mb-4">ここにJavaアプリの主要な情報や機能を紹介します。</p>
-</article>
-</main>
-<footer class="bg-blue-600 text-white text-center p-4 mt-8">
-<p>Javaアプリ © 2023</p>
-</footer>
+    <header class="bg-blue-600 text-white p-4">
+        <h1 class="text-4xl font-bold" onclick="window.location.href='index.html';">JavaApplication</h1>
+        </header>
+
+<div class="col flex justify-center items-center p-4">
+  <a href="input.html" class="block w-full max-w-2xl hover:bg-orange-600 transition">
+    <div class="p-6 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-600 transition group h-full flex flex-col transform hover:scale-105">
+      <div class="flex flex-col items-center justify-center flex-grow">
+        <span class="text-6xl mb-4">📘</span>
+        <h2 class="text-5xl font-bold text-center">入力フォーム</h2>
+      </div>
+      <p class="mt-4 text-center transition-opacity duration-300 opacity-100 sm:opacity-0 group-hover:opacity-100 card-description">
+        Fill out and submit the input form with your details.
+      </p>
+    </div>
+  </a>
+</div>
+
+<div class="col flex justify-center items-center p-4">
+  <a href="count.jsp" class="block w-full max-w-2xl hover:bg-orange-600 transition">
+    <div class="p-6 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-600 transition group h-full flex flex-col transform hover:scale-105">
+      <div class="flex flex-col items-center justify-center flex-grow">
+        <span class="text-6xl mb-4">📗</span>
+        <h2 class="text-5xl font-bold text-center">カウンター</h2>
+      </div>
+      <p class="mt-4 text-center transition-opacity duration-300 opacity-100 sm:opacity-0 group-hover:opacity-100 card-description">
+        Track and manage your counts effectively with the counter tool.
+      </p>
+    </div>
+  </a>
+</div>
+
+<div class="col flex justify-center items-center p-4">
+  <a href="#" class="block w-full max-w-2xl hover:bg-orange-600 transition">
+    <div class="p-6 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-600 transition group h-full flex flex-col transform hover:scale-105">
+      <div class="flex flex-col items-center justify-center flex-grow">
+        <span class="text-6xl mb-4">📙</span>
+        <h2 class="text-5xl font-bold text-center">サポート</h2>
+      </div>
+      <p class="mt-4 text-center transition-opacity duration-300 opacity-100 sm:opacity-0 group-hover:opacity-100 card-description">
+        This is the description for page.
+      </p>
+    </div>
+  </a>
+</div>
+
+<div class="col flex justify-center items-center p-4">
+    <a href="#" class="block w-full max-w-2xl hover:bg-orange-600 transition">
+      <div class="p-6 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-600 transition group h-full flex flex-col transform hover:scale-105">
+        <div class="flex flex-col items-center justify-center flex-grow">
+          <span class="text-6xl mb-4">📙</span>
+          <h2 class="text-5xl font-bold text-center">お問い合わせ</h2>
+        </div>
+        <p class="mt-4 text-center transition-opacity duration-300 opacity-100 sm:opacity-0 group-hover:opacity-100 card-description">
+          This is the description for page.
+        </p>
+      </div>
+    </a>
+  </div>
+
+  <footer class="bg-blue-600 text-white text-center p-4 mt-8">
+    <p>Javaアプリ © 2023</p>
+    </footer>
 </body>
 </html>

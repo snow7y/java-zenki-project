@@ -7,7 +7,7 @@
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
 	<header class="bg-blue-600 text-white p-4 absolute top-0 w-full">
-		<h1 class="text-4xl font-bold" onclick="window.location.href='index.html';">JavaApplication</h1>
+		<h1 class="text-4xl font-bold cursor-pointer" onclick="window.location.href='index.html';">JavaApplication</h1>
 	</header>
 	<div class="w-full max-w-sm p-4 m-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
 		<form class="space-y-6" action="input-servlet" method="POST">
@@ -17,41 +17,39 @@
 				<label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">お名前</label>
 				<input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
 			</div>
-			
 			<!-- <div>
 				<label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">パスワード</label>
 				<input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
 			</div> -->
-			
 			<div>
-				<label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">性別</label>
+				<label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="gender-male">性別</label>
 				<div class="flex items-center mb-4">
-					<input type="radio" name="gender" value="男" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-					<label for="gender" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">男</label>
+					<input type="radio" name="gender" id="gender-male" value="男" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+					<label for="gender-male" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">男</label>
 				</div>
 				<div class="flex items-center mb-4">
-					<input type="radio" name="gender" value="女" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-					<label for="gender" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">女</label>
+					<input type="radio" name="gender" id="gender-female" value="女" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+					<label for="gender-female" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">女</label>
 				</div>
 				<div class="flex items-center mb-4">
-					<input type="radio" name="gender" value="その他" checked class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-					<label for="gender" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">その他</label>
+					<input type="radio" name="gender" id="gender-other" value="その他" checked class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+					<label for="gender-other" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">その他</label>
 				</div>
 			</div>
 			
 			<div>
-				<label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">好物</label>
+				<label for="food-curry" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">好物</label>
 				<div class="flex items-center mb-4">
-					<input type="checkbox" name="food" value="カレー" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-					<label for="food" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">カレー</label>
+					<input type="checkbox" name="food" id="food-curry" value="カレー" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+					<label for="food-curry" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">カレー</label>
 				</div>
 				<div class="flex items-center mb-4">
-					<input type="checkbox" name="food" value="ラーメン" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-					<label for="food" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">ラーメン</label>
+					<input type="checkbox" name="food" id="food-ramen" value="ラーメン" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+					<label for="food-ramen" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">ラーメン</label>
 				</div>
 				<div class="flex items-center mb-4">
-					<input type="checkbox" name="food" value="牛丼" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-					<label for="food" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">牛丼</label>
+					<input type="checkbox" name="food" id="food-gyudon" value="牛丼" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+					<label for="food-gyudon" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">牛丼</label>
 				</div>
 			</div>
 			
@@ -69,5 +67,4 @@
 		</form>
 	</div>
 </body>
-
 </html>
