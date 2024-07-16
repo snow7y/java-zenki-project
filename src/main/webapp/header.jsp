@@ -7,7 +7,7 @@
             <ul class="flex space-x-4">
                 <li><a href="#" class="hover:underline">サポート</a></li>
                 <li>
-                    <a href="feedbackform.html" class="hover:underline">お問い合わせ</a>
+                    <a href="feedbackform.jsp" class="hover:underline">お問い合わせ</a>
                 </li>
             </ul>
         </nav>
