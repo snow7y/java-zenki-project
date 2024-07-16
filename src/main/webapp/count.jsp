@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html>
 <jsp:include page="head.jsp" flush="true" />
-<jsp:include page="header.jsp" flush="true" />
 <body>
+	<jsp:include page="header.jsp" flush="true" />
 	<!-- HTMLコメント -->
 	<h2>JSPでループ</h2>
 

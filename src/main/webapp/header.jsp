@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
- <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+     <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
     <h1 class="text-4xl font-bold" onclick="window.location.href='index.html';">JavaApplication</h1>
     <nav>
         <ul class="flex space-x-4">
