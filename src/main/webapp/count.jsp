@@ -2,11 +2,8 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>JSPページ</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<jsp:include page="head.jsp" flush="true" />
+<jsp:include page="header.jsp" flush="true" />
 <body>
 	<!-- HTMLコメント -->
 	<h2>JSPでループ</h2>
