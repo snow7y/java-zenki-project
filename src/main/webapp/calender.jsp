@@ -13,6 +13,6 @@
 <title>Team Name with JSP</title>
 </head>
 <body>
-<h1>今日は<%=today %>です。</h1>
+<h1>今日は<%=today %>です</h1>
 </body>
 </html>
