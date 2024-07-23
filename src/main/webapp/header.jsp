@@ -5,7 +5,7 @@
         </h1>
         <nav>
             <ul class="flex space-x-4">
-                <li><a href="#" class="hover:underline">サポート</a></li>
+                <li><a href="chat.jsp" class="hover:underline">サポート</a></li>
                 <li>
                     <a href="feedbackform.jsp" class="hover:underline">お問い合わせ</a>
                 </li>
