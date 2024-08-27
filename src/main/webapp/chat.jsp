@@ -52,7 +52,7 @@
                         Send
                     </button>
                 </form>
-                <a href="index.jsp" class="text-blue-500 hover:underline mt-4 block text-center">Back to Home</a>
+                <a href="index.html" class="text-blue-500 hover:underline mt-4 block text-center">Back to Home</a>
             </div>
         </div>
     </div>

@@ -29,6 +29,7 @@ public class FeedbackServlet extends HttpServlet {
 					out.println("</head>                                         ");
 					out.println("<body>                                          ");
 					out.println("    <h1>ありがとうございます</h1>                           ");
+					out.println("    <a href=\"index.html\">ホームへ戻る</a>                           ");
 					out.println("</body>                                         ");
 					out.println("</html>                                         ");
 					}
